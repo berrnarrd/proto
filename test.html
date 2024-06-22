@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        /* Basic styling for the form */
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Start Form -->
+    <form class="form" method="post" action="mail/mail.php">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Name" required="">
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Email" required="">
+        </div>
+        <div class="form-group">
+            <input type="text" name="phone" placeholder="Phone" required="">
+        </div>
+        <div class="form-group">
+            <input type="text" name="subject" placeholder="Subject" required="">
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Your Message" required=""></textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn" type="submit">Send</button>
+        </div>
+    </form>
+    <!--/ End Form -->
+</body>
+</html>
